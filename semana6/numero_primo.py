@@ -7,6 +7,7 @@ def primo(num):
     return i == num
 
 
-print(primo(6))
-print(primo(7))
-print(primo(13))
+for n in range(2, 100):
+    if not primo(n):
+        continue
+    print(n)
